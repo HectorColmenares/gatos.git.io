@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>gatosPelones</title>
+    <style>
+
+      h1
+      { 
+        color: purple;
+      }
+
+      h3{
+        color: cornflowerblue;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1 > App de Gatitos</h1>
+    <link href="style2.css" rel="stylesheet">
+
+    7   
+    <main> 
+      <!-- el ementento "style" sirve para darle estilos a otros elemtos este elemento es de tipo css style="color: purple;" -->
+      
+      <h3>Imagenes de gatos:</h3>
+      <div>
+
+        <!-- <a href="#parrafo1">parrafo 1</a> href sirve para: Devuelve la localización de la hoja de estilo
+        <a href="#parrafo2"">parrafo 2</a>
+        <a href="#parrafo3">parrafo 3</a>
+        <a href="#parrafo4">parrafo 4</a>
+        <a href="#parrafo5">parrafo 5</a>
+        <a href="#parrafo6">parrafo 6</a> --> <!-- redireccionar a areas especificas dentro de la pagina, fuinciona como un indice-->
+
+
+        <p>Haz clic aqui para ver mas <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer" >imagenes de gatos.</a></p> <!-- hacer una linea de texto un enlace-->
+        <p>Haz clic aqui para ver mas <a href="#" target="_blank" rel="noopener noreferrer" >imagenes de gatos.(enlace morido)</a></p> <!--enlace muerto sirve para cuando aun no tenemos un enlace al cual dirigirse y esta en creacion la pagina -->
+
+        
+  <!--hacer una imagen un enlace -->
+        <a href="https://www.freecodecamp.org/espanol/"  target="_blank" rel="noopener noreferer'" ><img src="https://bit.ly/fcc-relaxing-cat" alt="un gato recostado sobre su espalda"> </a>
+
+        
+
+        <h3>Lista de Gatos</h3>
+
+        <p>cosas que los gatos <em>aman</em> aman: </p> <!--la etiqueta em muestra lo que este dentro de ella en letras corsivas-->
+
+        <ul>
+          <li>Menta gatuna</li> <!--etiqueta para especificar elementos de la lista-->
+          <li>apuntadores laser</li>
+          <li><s>lasaña</S></li> <!--el etiqueta s sirve para tachar texto-->
+          <hr> <!--la etiqueta er sirve para separar por secciones con una linea horizontal solo requiere la etiqueta de apertura-->
+
+        </ul> <!--etiqueta para listas no ordenadas <ul></ul> -->
+
+        <img src="imagenes/lasagna-.jpg" alt="es una imagen de lasaña yomi.">
+
+        <p>cosas que los gatos <strong>odian</strong>: </p> <!--la etiqueta strong sirve para remarcar en negritas la o las palabras que se encuentren dentro de la etiqueta -->
+        <ol>
+          <li>Tratamientos antipulgas </li>
+          <li>Truenos</li>
+          <li>Otros gatos</li>
+          
+        </ol> <!--etiqueta para lista ordenada ol(Order List)-->
+    </div>
+      <img src="imagenes/gatosPelones.jpeg" alt="una imagen de gatos pelones">
+      <img src="imagenes/gatos pelones 2.jpg" alt="una imagen de gatos pelones parte 2">
+      <img src="imagenes/gatopelon3.jpg" alt="una imagen de gatos pelones parte 3">
+
+      <br>   
+
+
+      <label for="interior">
+         <input id="interior" value="interior" type="radio" name="interior-exterior"> interior 
+        </label>  <!--con el atributo for relacionamos mas la etiqueta con radio, creando un ID dentro de input --> <!--el componente label funciona para seleccionar un radio desde el nombre-->
+
+      <br> <!-- br es un elemento de salto de linea-->
+
+      <label for="exterior">
+        <input id="exterior"  value="exterior" type="radio" name="interior-exterior" checked> exterior
+      </label> <!--type="radio" se usa para crear elementos de tipo radio-->
+      <!-- "value" funciona para decirle al servidor que opcion se selecciono de un grupo -->
+
+      <!--Grupo de botones de radio: agregando el atrubuto "name" a todos los radio que formen parde de esas opciones -->
+      <br><br>
+
+      <!-- casilla de verificacion checkbox -->
+      <label for="cariñoso">
+        <input id="cariñoso" value="cariñoso" type="checkbox" name="personalidad">cariñoso 
+      </label> <br>
+      
+      <!-- marca de opcion por defecto "checked" -->
+      <label for="perezoso">
+        <input id="perezoso" value="perezoso" type="checkbox" name="personalidad" checked>perezoso 
+      </label> <br>
+      <label for="energico">
+        <input id="energico" value="energico" type="checkbox" name="personalidad">energico 
+      </label><br>
+
+
+      <br>
+
+      <form action="/enviar-respueta">
+        <input type="text" placeholder="nombres e gatos pelones
+        " required> <!--creacion de barra para ingresar caracteres. Con -> placeholder <- dara una pequeña pista de que es lo que debe escriir --> <!--required es para colocar campos obligatorios-->
+
+        <br> 
+        <button type="submit">enviar</button> <!-- creacion de un boton -->
+      </form> <!--etiqueta para hacer un formulario-->
+
+      <h3 id="parrafo1">parrafo 1</h3><!-- creacion de titulo con un ID para direccionar a traces del indice a esta area-->
+      <p>¿Los comentarios de HTML dan para un post? ¿Lo merecen siendo tan triviales y fáciles de hacer? Obviamente no dan para un curso de los nuestros, pero para un post yo creo que sí, y si no, me lo cuentas al final en los comentarios.</p> <!-- creacion de un parrafo -->
+
+        <h3>parrafo 2</h3>
+        <p>Quizá te resulte gracioso, pero cuando yo empecé a aprender HTML por mi cuenta (¡a principios de siglo!) una de las cosas que más me liaban la cabeza eran los comentarios. Por aquel entonces yo era un joven estudiante de Arquitectura (sí, has leído bien) que nunca había visto temas de código más allá de ir a clases de informática en el colegio, cargar juegos desde MS-DOS o dibujar con el DrLogo, así que me fascinaba el concepto.</p>
+
+      <h3 id="parrafo3">parrafo 3</h3>      
+      <p>Por otro lado esta era una relación de amor/odio. Siempre me hacía un lío con dónde iba la dichosa admiración o cuántos guioncitos había que poner. Como diseñador, yo quería aprender a escribir el código de las webs que diseñaba ya que estaba hasta las narices de que Dreamweaver me cambiase todo de sitio a su antojo (ya ves, me gusta tener el control). Por cierto, si eres tan novato como era yo entonces, antes de nada te voy a hacer dos recomendaciones:</p>
+
+      <h3 id="parrafo4">parrafo 4</h3> 
+      <p>
+        En esta certificación de Diseño Web Adaptativo, aprenderás los lenguajes que los desarrolladores usan para construir páginas web: HTML (Lenguaje de Marcado de Hipertexto) para el contenido, y CSS (hojas de estilo en cascada) para el diseño.</p>
+        
+        <h3 id="parrafo5">parrafo 5</h3> 
+        <p>Primero, crearás una aplicación de fotos de gatos para aprender los conceptos básicos de HTML y CSS. Más adelante, aprenderás técnicas modernas como variables CSS, mediante la construcción de un pingüino, y las mejores prácticas para la accesibilidad mediante la construcción de un sitio de cuestionarios.</p>
+        
+        <h3 id="parrafo6">parrafo 6</h3> 
+          <p>Por último, aprenderás cómo hacer páginas web que respondan a diferentes tamaños de pantalla, mediante la construcción de una galería de fotos con Flexbox, y un diseño de artículos de revista con CSS Grid.</p>
+    </main>
+    <!--para crear un parrafo ocupamos <p></p>  -->
+    <!-- <h1>Hola perrote</h1>
+    <h2>Hola perrote mas chico x2</h2>
+    <h3>hola perrote mas chiquito x3</h3>
+    <h4>hola perrote mas chiquitito x4</h4>
+    <h5>hola perrote mas chiquititito x5</h5>
+    <h6>hola perrote mas chiquitititito x6</h6> solo podemos colocar de h1 a h6
+
+                                          para titulos en negritas apartir de h7 ya no tiene formato -->
+  <footer>
+    <p><small>----------pagina sin derechos de autor ------------------ <a href="https://www.youtube.com/watch?v=XqFR2lqBYPs&t=1992s" target="_blank">tutorial que vi </a></small></p>
+  </footer> 
+  <!-- el elmento <footer> es para colocar un pie de pagina -->
+
+
+    
+   </body>
+    
+
+</html>
